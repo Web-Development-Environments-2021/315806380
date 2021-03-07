@@ -1,7 +1,76 @@
-#menu
+/* #menu
 {
-	position: fixed;
-	width: 100%;
-	height: 35px;
-	background: white;
+position: fixed;
+width: 100%;
+height: 35px;
+background: white;
+} */
+
+/* The navigation bar */
+.menu {
+overflow: hidden;
+background: none;
+position: fixed; /* Set the menu to fixed position */
+top: 0; /* Position the menu at the top of the page */
+width: 100%; /* Full width */
 }
+
+/* Links inside the menu */
+.menu a {
+float: left;
+display: block;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.menu a:hover {
+background: #ddd;
+color: black;
+}
+
+/* Links */
+a {
+	color: antiquewhite;
+	font: Arial;
+}
+
+/* Welcome content*/
+.welcome {
+	padding-top: 20px;
+}
+
+#welcomeHeadline {
+	color: antiquewhite;
+	font: Arial;
+	font-size: 750%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+  	text-align: center;
+}
+
+/* Main content */
+.main {
+margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
+
+/* My Photos content */
+.img-fluid {
+	height: 10%;
+	width: 10%;
+}
+
+body {
+	background-image: url('assets/img/WelcomeImgBG.jpeg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+
+
+
+/* Testing Area */
