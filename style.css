@@ -13,6 +13,7 @@ background: none;
 position: fixed; /* Set the menu to fixed position */
 top: 0; /* Position the menu at the top of the page */
 width: 100%; /* Full width */
+z-index: 2;
 }
 
 /* Links inside the menu */
@@ -76,12 +77,13 @@ body {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
+	font-style: oblique;
+    font-weight: bold;
+    text-align: center;
 }
 
 .section {
-    font-style: oblique;
-    font-weight: bold;
-    text-align: center;
+    padding-top: 10px;
 }
 
 .Headline {
@@ -121,19 +123,8 @@ border-radius: 10px;
 background: darkgray;  
 }
 
-/* .col {
-	margin: auto;
-	width: 100%;
-} */
-
 * {
 	box-sizing: border-box;
-}
-
-/* Set a background color */
-body {
-	background-color: #474e5d;
-	font-family: Helvetica, sans-serif;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -259,4 +250,50 @@ border-radius: 6px;
 .right {
 	left: 0%;
 }
+}
+
+.submitInput1 {
+	width: 50%;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 3px #ddd;
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.submitInput2 {
+	width: 50%;
+	height: 250px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 3px #ddd;
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+	text-align: start;
+}
+
+.submitButton {
+	border-radius: 12px;
+	height: 50px;
+	width: 100px;
+	transition-duration: 0.4s;
+}
+
+.submitButton:hover {
+	background-color: darkgray; /* Green */
+	color: white;
 }
