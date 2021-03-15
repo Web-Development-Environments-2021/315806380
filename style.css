@@ -20,6 +20,11 @@ padding: 14px 16px;
 text-decoration: none;
 }
 
+.menu img {
+	float: left;
+	height: 44px;
+}
+
 /* Change background on mouse-over */
 .menu a:hover {
 background: darkgray;
@@ -83,10 +88,6 @@ body {
 	font-size: 250%;
 }
 
-
-
-
-/* Testing Area */
 .rowPhotos {
 border: black;
 width: 70%;
@@ -244,6 +245,12 @@ border-radius: 6px;
 }
 }
 
+.textareaQA {
+	width: 30%;
+	height: 300px;
+	resize: none;
+}
+
 .submitInput1 {
 	width: 50%;
     margin: 8px 0;
@@ -276,6 +283,7 @@ border-radius: 6px;
     padding-top: 12px;
     padding-bottom: 12px;
 	text-align: start;
+	resize: none;
 }
 
 .submitButton {

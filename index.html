@@ -5,7 +5,7 @@
 </head>
 <body>
 <div class="menu">
-  <img>
+  <img src="assets/img/G-logo.jfif" alt="" />  
   <a href="#about">About Me</a>
   <a href="#photos">My Photos</a>
   <a href="#playlist">My Playlist</a>
@@ -61,7 +61,7 @@
         </div>
         <div class="container left">
           <div class="content">
-            <h2>1967</h2>
+            <h2>1973</h2>
             <p>Third Child, Yossi.</p>
           </div>
         </div>
@@ -148,7 +148,12 @@
   </section>
 
   <section id="spa" class="section">
-    <h1 class="Headline">ans</h1>
+    <h1 class="Headline">Q&A</h1>
+    <div class="rowQA">
+      <textarea class="textareaQA">w1 to w2</textarea>
+      <textarea class="textareaQA">w1 to w3</textarea>
+      <textarea class="textareaQA">w2 to w3</textarea>
+    </div>
     <br/>
     <br/>
     <br/>
@@ -156,17 +161,18 @@
 
   <section id="contact" class="section">
     <h1 class="Headline">contact me</h1>
-    <form action="mailto:erange@post.bgu.ac.il" method="post" enctype="text/plain">
+    <form action="mailto:erange@post.bgu.ac.il?subject=Contact Me" method="post" enctype="text/plain">
       Name:<br>
       <input class="submitInput1" type="text" name="name"><br>
-      Mood:<br>
+      Urgency:<br>
       <select class="submitInput1" type="text" name="Mood">
-        <option value="a">&#128512</option>
-        <option value="b">&#128548</option>
-        <option value="c">&#128557</option>
+        <option value="Very Urgency">Very Urgent</option>
+        <option value="Urgent">Urgent</option>
+        <option value="Not Urgent">Not Urgent</option>
       </select><br>
       Message:<br>
-      <input class="submitInput2" type="text" name="comment" size="50"><br><br>
+      <textarea class="submitInput2" type="text" name="comment" size="50"></textarea>
+      <br><br>
       <input class="submitButton" type="submit" value="Send">
     </form>
     <br/>
