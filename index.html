@@ -2,6 +2,7 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="style.css" />
+  <meta charset="UTF-8">
 </head>
 <body>
 <div class="menu">
@@ -171,7 +172,19 @@
         <option value="Not Urgent">Not Urgent</option>
       </select><br>
       Message:<br>
-      <textarea class="submitInput2" type="text" name="comment" size="50"></textarea>
+      <textarea id="message" class="submitInput2" type="text" name="comment" size="50"></textarea>
+      <div>
+        <button type="button" onclick="EmojiGenerator(this)">&#x1F600</button>
+        <button type="button" onclick="EmojiGenerator(this)">&#128513</button>
+        <button type="button" onclick="EmojiGenerator(this)">&#128514</button>
+        <button type="button" onclick="EmojiGenerator(this)">&#128516</button>
+        <button type="button" onclick="EmojiGenerator(this)">&#128517</button>
+        <button type="button" onclick="EmojiGenerator(this)">&#128520</button>
+        <button type="button" onclick="EmojiGenerator(this)">&#128525</button>
+        <button type="button" onclick="EmojiGenerator(this)">&#128531</button>
+        <button type="button" onclick="EmojiGenerator(this)">&#128536</button>
+        <button type="button" onclick="EmojiGenerator(this)">&#128545</button>
+      </div>
       <br><br>
       <input class="submitButton" type="submit" value="Send">
     </form>
@@ -207,6 +220,12 @@ $(function(){
         "transform 0.25s ease";
     }
   } 
+</script>
+<script>
+  function EmojiGenerator(button) {
+    let textarea = document.getElementById("message");
+    textarea.value += button.innerHTML
+  }
 </script>
 </body>
 </html>
