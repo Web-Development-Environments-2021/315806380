@@ -255,6 +255,33 @@ border-radius: 6px;
     background-color: darkgray;
 }
 
+#webs {
+	font-style: oblique;
+	border-collapse: collapse;
+	width: 100%;
+  }
+  
+#webs td, #webs th {
+	border: 1px solid black;
+	padding: 8px;
+}
+  
+#custowebsmers tr:nth-child(even){
+	background-color: #f2f2f2;
+}
+  
+#webs tr:hover {
+	background-color: #ddd;
+}
+  
+#webs th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: right;
+	background-color: darkgray;
+	color: black;
+}
+
 .submitInput1 {
 	width: 50%;
     margin: 8px 0;

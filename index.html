@@ -2,6 +2,7 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <meta charset="utf-8">
 </head>
 <body>
@@ -117,12 +118,13 @@
 
   <section id="like" class="section">
     <h1 class="Headline">Give me a like!</h1>
+    <p>This is an organization whose goal is to help Holocaust survivors, that important!!</p>
     <iframe 
-      src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&width=174&layout=button_count&action=like&size=large&share=true&height=46&appId" 
-      width="174" 
-      height="46" 
-      style="border:none;overflow:hidden" 
-      scrolling="no" 
+      src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fpg%2Faihhs%2Fposts%2F&width=450&layout=standard&action=like&size=large&share=false&height=35&appId" 
+      width="450" 
+      height="35" 
+      style="border:none;overflow:hidden" s
+      crolling="no" 
       frameborder="0" 
       allowfullscreen="true" 
       allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
@@ -135,7 +137,7 @@
   <section id="qrcoder" class="section">
     <h1 class="Headline">Scan my code!</h1>
     <img 
-      src='https://chart.googleapis.com/chart?cht=qr&chl=https%3A%2F%2Fweb-development-environments-2021.github.io%2Fassignment1-eaert%2F&chs=180x180&choe=UTF-8&chld=L|2' 
+      src='https://chart.googleapis.com/chart?cht=qr&chl=https%3A%2F%2Fweb-development-environments-2021.github.io%2F315806380%2F&chs=180x180&choe=UTF-8&chld=L|2' 
       alt='qr code'>
       <a 
         href='https://www.qr-code-generator.com' 
@@ -150,35 +152,40 @@
 
   <section id="spa" class="section">
     <h1 class="Headline">Q&A</h1>
-    <div class="rowQA">
-      <textarea dir="rtl" class="textareaQA">
-      מאפייני Web1:
-        1. קריאה בלבד
-        2. שיתוף מידע
-        3. לא תומך בפירסום המוני (חברותי, פירסום ע"י חברות בלבד)
-      מאפייני Web2:
-        1. קריאה וכתיבה
-        2. אינטרקציה בין משתמשים
-        3. אינטרנט קהילתי (אנשים מפרסים תוכן שאנשים אחרים צורכים)
-      מאפייני Web3:
-        1. קריאה, כתיבה וביצוע
-        2. מערכות המלצה
-        3. חופשי לכולם (אפליקציות, מינוף קשר)
-      </textarea>
-      <textarea dir="rtl" class="textareaQA">
-      Web1 נוצר הוקם במטרה לגשת לנתונים בכל רגע נתון, הדפים היו לקריאת בלבד,
-      סטטים ושיתופיים, 
-      Web2 לעומת הWeb1 היה לקריאה וכתיבה, דינאמי וקהילתי,
-      Web3 לעומת הWeb2 והWeb1 הינו לקריאה, כתיבה וביצוע, דינאמי וחופשי לכולם, כל
-      אדם יכול לפתוח אתר.
-
-      תרחישי שימוש:
-      1. כתיבת האתר - 
-        HTML - Web1
-        RSS, XML - Web2
-        Javascript + HTML - Web3
-      </textarea>
-    </div>
+    <table id="webs" dir="rtl">
+      <tr>
+        <th>Web Type</th>
+        <th>Featue1 - אפשרויות עריכה</th>
+        <th>Featue2 - מטרה</th>
+        <th>Featue3 - פירסום מידע</th>
+      </tr>
+      <tr>
+        <th>Web1</th>
+        <th>קריאה בלבד</th>
+        <th>שיתוף מידע</th>
+        <th>חברות מפרסמות תוכן</th>
+      </tr>
+      <tr>
+        <th>Web2</th>
+        <th>קריאה וכתיבה</th>
+        <th>איטרקציה בין אנשים</th>
+        <th>אנשים מפרסמים תוכן</th>
+      </tr>
+      <tr>
+        <th>Web3</th>
+        <th>קריאה, כתיבה וביצוע</th>
+        <th>מערכות המלצה - אתרים מותאמים אישית</th>
+        <th>חברות ואנשים בונים מערכות המקשרות בין אנשים</th>
+      </tr>
+      <tr>
+        <th>Use Case</th>
+        <th>בWeb1 האתר הינו סטטי לחלוטין, ברגע שהאתר "באוויר" לא ניתן לשנות את עיצובו, לעומת זאת בWeb2 יהיה ניתן לשנות קטעי טקסט בעוד שבWeb3 ניתן לשנות את העיצוב הכולל.</th>
+        <th>חיפוש השאילתא "כדורסל" תראה בWeb1 אתר מידע הקשור לכדורסל בלבד, בעוד שב Web3 יכולה להראות אתר הקשור לספורט באופן כללי ובWeb2 אתר אשר נוצר ע"י משתמש לצורך שיתוף מידע הקשור לכדורסל, בעקבות המערכות המלצה.
+          <br/>בנוסף, האתרים ההבאים שהמשתמש יכנס בWeb3 יראו פירסומות הקשורות לחיפושיו הקודמים, בעוד שבWeb1 הפירסומות הינם קבועות.
+        </th>
+        <th> חיפוש מוצר מסויים, לדוגמא קולה, בWeb1 נקבל אתר מידע אשר קשור לקולה, בWeb2 נוכל לקבל אתר שיתופי של חוות דעת לגבי קולה ובWeb3 נקבל אתרים/אפליקציות/פלטמפורמות אשר מתעסקות בקולה ומשקאות מתוקים.</th>
+      </tr>
+    </table>
     <br/>
     <br/>
     <br/>
@@ -187,6 +194,8 @@
   <section id="contact" class="section">
     <h1 class="Headline">contact me</h1>
     <form action="mailto:erange@post.bgu.ac.il?subject=Contact Me" method="post" enctype="text/plain">
+      email:<br>
+      <input class="submitInput1" type="email" name="email"><br>
       Name:<br>
       <input class="submitInput1" type="text" name="name"><br>
       Urgency:<br>
@@ -245,7 +254,7 @@ $(function(){
     }
   } 
 </script>
-<script>
+<script type="text/javascript">
   function EmojiGenerator(button) {
     let textarea = document.getElementById("message");
     textarea.value += button.innerHTML
