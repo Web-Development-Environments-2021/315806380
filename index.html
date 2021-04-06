@@ -2,7 +2,7 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="style.css" />
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
 </head>
 <body>
 <div class="menu">
@@ -151,9 +151,33 @@
   <section id="spa" class="section">
     <h1 class="Headline">Q&A</h1>
     <div class="rowQA">
-      <textarea class="textareaQA">w1 to w2</textarea>
-      <textarea class="textareaQA">w1 to w3</textarea>
-      <textarea class="textareaQA">w2 to w3</textarea>
+      <textarea dir="rtl" class="textareaQA">
+      מאפייני Web1:
+        1. קריאה בלבד
+        2. שיתוף מידע
+        3. לא תומך בפירסום המוני (חברותי, פירסום ע"י חברות בלבד)
+      מאפייני Web2:
+        1. קריאה וכתיבה
+        2. אינטרקציה בין משתמשים
+        3. אינטרנט קהילתי (אנשים מפרסים תוכן שאנשים אחרים צורכים)
+      מאפייני Web3:
+        1. קריאה, כתיבה וביצוע
+        2. מערכות המלצה
+        3. חופשי לכולם (אפליקציות, מינוף קשר)
+      </textarea>
+      <textarea dir="rtl" class="textareaQA">
+      Web1 נוצר הוקם במטרה לגשת לנתונים בכל רגע נתון, הדפים היו לקריאת בלבד,
+      סטטים ושיתופיים, 
+      Web2 לעומת הWeb1 היה לקריאה וכתיבה, דינאמי וקהילתי,
+      Web3 לעומת הWeb2 והWeb1 הינו לקריאה, כתיבה וביצוע, דינאמי וחופשי לכולם, כל
+      אדם יכול לפתוח אתר.
+
+      תרחישי שימוש:
+      1. כתיבת האתר - 
+        HTML - Web1
+        RSS, XML - Web2
+        Javascript + HTML - Web3
+      </textarea>
     </div>
     <br/>
     <br/>
@@ -174,16 +198,16 @@
       Message:<br>
       <textarea id="message" class="submitInput2" type="text" name="comment" size="50"></textarea>
       <div>
-        <button type="button" onclick="EmojiGenerator(this)">&#x1F600</button>
-        <button type="button" onclick="EmojiGenerator(this)">&#128513</button>
-        <button type="button" onclick="EmojiGenerator(this)">&#128514</button>
-        <button type="button" onclick="EmojiGenerator(this)">&#128516</button>
-        <button type="button" onclick="EmojiGenerator(this)">&#128517</button>
-        <button type="button" onclick="EmojiGenerator(this)">&#128520</button>
-        <button type="button" onclick="EmojiGenerator(this)">&#128525</button>
-        <button type="button" onclick="EmojiGenerator(this)">&#128531</button>
-        <button type="button" onclick="EmojiGenerator(this)">&#128536</button>
-        <button type="button" onclick="EmojiGenerator(this)">&#128545</button>
+        <button type="button" class="Emoji" onclick="EmojiGenerator(this)">&#x1F600</button>
+        <button type="button" class="Emoji" onclick="EmojiGenerator(this)">&#128513</button>
+        <button type="button" class="Emoji" onclick="EmojiGenerator(this)">&#128514</button>
+        <button type="button" class="Emoji" onclick="EmojiGenerator(this)">&#128516</button>
+        <button type="button" class="Emoji" onclick="EmojiGenerator(this)">&#128517</button>
+        <button type="button" class="Emoji" onclick="EmojiGenerator(this)">&#128520</button>
+        <button type="button" class="Emoji" onclick="EmojiGenerator(this)">&#128525</button>
+        <button type="button" class="Emoji" onclick="EmojiGenerator(this)">&#128531</button>
+        <button type="button" class="Emoji" onclick="EmojiGenerator(this)">&#128536</button>
+        <button type="button" class="Emoji" onclick="EmojiGenerator(this)">&#128545</button>
       </div>
       <br><br>
       <input class="submitButton" type="submit" value="Send">
